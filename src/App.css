@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+/* .orbitron-<uniquifier> {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+ */
+
+/* Importing locally installed font */
+@font-face {
+  font-family: 'Digital 7';
+  src:  url('../fonts/digital-7.ttf') format('ttf'),
+        url('../fonts/digital-7-italic.ttf') format('ttf'),
+        url('../fonts/digital-7-mono-italic.ttf') format('ttf'),
+        url('../fonts/digital-7-mono.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.board-row {
+  display: flex; 
+  justify-content: center; 
+}
+
+.num-screen {
+  font-family: 'Digital 7', sans-serif;
+  margin: 20px; 
+  padding: 10px;
+  border-radius: 12px;
+  width: 190px;
+  height: 50px;
+  background-color: #B8B8B8;
+  color: #0011DE;
+  display: flex;
+  justify-content: right;
+}
+
+.square {
+  width: 50px; 
+  height: 50px;
+  font-size: 20px;
+  border-radius: 12px;
+  margin: 2px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square-red {
+  background-color: #c4393b;
+  width: 50px; 
+  height: 50px;
+  font-size: 20px;
+  border-radius: 12px;
+  margin: 2px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.square-white {
+  background-color: white;
+  color: black;
+  width: 50px; 
+  height: 50px;
+  font-size: 20px;
+  border-radius: 12px;
+  margin: 2px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
